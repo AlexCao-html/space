@@ -1,0 +1,143 @@
+* {
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+main section {
+    margin-top: 5vh;
+    text-align: justify;
+    text-align: center;
+} 
+
+main p {
+    text-align: justify;
+}
+
+.maincontent {
+    margin-left: 5vw;
+    margin-right: 1vw;
+}
+
+header {
+    text-align: center;
+}
+
+header img {
+    width: 90vw;
+}
+
+footer {
+    display: flex;
+    height: 10vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    color: #00f;
+    text-decoration: underline #add8e6;
+}
+
+a:hover {
+    color: #00f;
+    text-decoration: underline #00f;
+}
+
+a:active {
+    color: #f00;
+    text-decoration: underline #f00;
+}
+
+nav {
+    display: flex;
+    position: fixed;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    z-index: 9999;
+    top: 0;
+    right: 0;
+    justify-content: center;
+    background: #fff;
+    top: -100vh;
+    transition: all 0.5s cubic-bezier(0.6, -0.28, 0.32, 1.275);
+}
+
+nav.toggled {
+    top: 0;
+}
+
+.wrapper {
+    position: absolute;
+}
+
+nav a {
+    position: relative;
+    display: inline-block;
+    font-size: xx-large;
+    margin: 1vh 1vw;
+    z-index: 99999;
+}
+
+.flexBreak {
+    flex-basis: 100%;
+    height: 0;
+}
+
+.burger {
+    bottom: 10px;
+}
+
+.burger>div {
+    cursor: pointer;
+    width: 40px;
+    margin: 0 auto;
+}
+
+.burger div div {
+    width: 35px;
+    height: 7px;
+    border-radius: 25%;
+    background-color: #000;
+    margin: 0 auto;
+}
+
+.burger .line1 {
+    top: -5px;
+}
+
+.burger .line3 {
+    bottom: -5px;
+}
+
+.X {
+    position: absolute;
+    z-index: 99999999999;
+    cursor: pointer;
+    display: none;
+}
+
+.X.toggled {
+    display: block;
+}
+
+.X .line1 {
+    width: 40px;
+    height: 7px;  
+    background: #000;
+    border-radius: 25%; 
+    transform: rotate(-45deg) translateX(-5px);
+}
+
+.X .line2 {
+    width: 40px;
+    height: 7px;    
+    background: #000;  
+    border-radius: 25%; 
+    transform: rotate(45deg) translateX(-5px);
+}
