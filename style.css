@@ -117,7 +117,7 @@ nav a {
 }
 
 .X {
-    position: absolute;
+    position: fixed;
     z-index: 99999999999;
     cursor: pointer;
     display: none;
