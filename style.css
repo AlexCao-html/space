@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 10000000 version
+*/
+
 * {
     position: relative;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', Arial, Helvetica, sans-serif;
@@ -32,30 +39,52 @@ header img {
 }
 
 footer {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
     height: 10vh;
     width: 100vw;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     border-top: 1px solid #000;
 }
 
 a {
     color: #00f;
-    text-decoration: underline #add8e6;
+    -webkit-text-decoration: underline #add8e6;
+       -moz-text-decoration: underline #add8e6;
+            text-decoration: underline #add8e6;
 }
 
 a:hover {
     color: #00f;
-    text-decoration: underline #00f;
+    -webkit-text-decoration: underline #00f;
+       -moz-text-decoration: underline #00f;
+            text-decoration: underline #00f;
 }
 
 a:active {
     color: #f00;
-    text-decoration: underline #f00;
+    -webkit-text-decoration: underline #f00;
+       -moz-text-decoration: underline #f00;
+            text-decoration: underline #f00;
 }
 
 nav {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
     position: fixed;
     text-align: center;
@@ -64,9 +93,16 @@ nav {
     z-index: 9999;
     top: 0;
     right: 0;
-    justify-content: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     background: #fff;
     top: -100vh;
+    -webkit-transition: all 0.5s cubic-bezier(0.6, -0.28, 0.32, 1.275);
+    -o-transition: all 0.5s cubic-bezier(0.6, -0.28, 0.32, 1.275);
+    -moz-transition: all 0.5s cubic-bezier(0.6, -0.28, 0.32, 1.275);
     transition: all 0.5s cubic-bezier(0.6, -0.28, 0.32, 1.275);
 }
 
@@ -87,7 +123,9 @@ nav a {
 }
 
 .flexBreak {
-    flex-basis: 100%;
+    -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
     height: 0;
 }
 
@@ -104,7 +142,9 @@ nav a {
 .burger div div {
     width: 35px;
     height: 7px;
-    border-radius: 25%;
+    -webkit-border-radius: 25%;
+       -moz-border-radius: 25%;
+            border-radius: 25%;
     background-color: #000;
     margin: 0 auto;
 }
@@ -132,14 +172,26 @@ nav a {
     width: 40px;
     height: 7px;  
     background: #000;
-    border-radius: 25%; 
-    transform: rotate(-45deg) translateX(-5px);
+    -webkit-border-radius: 25%;
+       -moz-border-radius: 25%;
+            border-radius: 25%; 
+    -webkit-transform: rotate(-45deg) translateX(-5px); 
+       -moz-transform: rotate(-45deg) translateX(-5px); 
+        -ms-transform: rotate(-45deg) translateX(-5px); 
+         -o-transform: rotate(-45deg) translateX(-5px); 
+            transform: rotate(-45deg) translateX(-5px);
 }
 
 .X .line2 {
     width: 40px;
     height: 7px;    
     background: #000;  
-    border-radius: 25%; 
-    transform: rotate(45deg) translateX(-5px);
+    -webkit-border-radius: 25%;  
+       -moz-border-radius: 25%;  
+            border-radius: 25%; 
+    -webkit-transform: rotate(45deg) translateX(-5px); 
+       -moz-transform: rotate(45deg) translateX(-5px); 
+        -ms-transform: rotate(45deg) translateX(-5px); 
+         -o-transform: rotate(45deg) translateX(-5px); 
+            transform: rotate(45deg) translateX(-5px);
 }
