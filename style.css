@@ -37,6 +37,7 @@ footer {
     width: 100vw;
     align-items: center;
     justify-content: center;
+    border-top: 1px solid #000;
 }
 
 a {
